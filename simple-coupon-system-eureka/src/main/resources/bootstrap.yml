@@ -1,0 +1,44 @@
+#Eureka集群
+server:
+  port: 8081
+spring:
+  application:
+    name: simple-coupon-system-eureka
+  profiles: eureka-server1
+eureka:
+  instance:
+    hostname: eureka-server1
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://eureka-server2:8082/eureka/,http://eureka-server3:8083/eureka/
+
+---
+server:
+  port: 8082
+spring:
+  application:
+    name: simple-coupon-system-eureka
+  profiles: eureka-server2
+eureka:
+  instance:
+    hostname: eureka-server2
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://eureka-server1:8081/eureka/,http://eureka-server3:8083/eureka/
+
+---
+server:
+  port: 8083
+spring:
+  application:
+    name: simple-coupon-system-eureka
+  profiles: eureka-server3
+eureka:
+  instance:
+    hostname: eureka-server3
+    prefer-ip-address: false
+  client:
+    service-url:
+      defaultZone: http://eureka-server1:8081/eureka/,http://eureka-server2:8082/eureka/

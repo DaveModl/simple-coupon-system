@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="simple-coupon-system-eureka" />
+        <module name="simple-coupon-system-settlement" />
+        <module name="simple-coupon-system-gateway" />
+        <module name="simple-coupon-system-template" />
+        <module name="simple-simple-coupon-system-disturibution" />
+        <module name="simple-coupon-system-common" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="simple-coupon-system" options="-parameters" />
+      <module name="simple-coupon-system-common" options="-parameters" />
+      <module name="simple-coupon-system-eureka" options="-parameters" />
+      <module name="simple-coupon-system-gateway" options="-parameters" />
+      <module name="simple-coupon-system-service" options="-parameters" />
+      <module name="simple-coupon-system-settlement" options="-parameters" />
+      <module name="simple-coupon-system-template" options="-parameters" />
+      <module name="simple-simple-coupon-system-disturibution" options="-parameters" />
+    </option>
+  </component>
+</project>

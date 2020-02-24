@@ -1,0 +1,17 @@
+server:
+  port: 7003
+  servlet:
+    context-path: /coupon-settlement
+
+spring:
+  application:
+    name: simple-coupon-system-settlement
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server1:8081/eureka/
+
+logging:
+  level:
+    com.coupon.ststem: debug

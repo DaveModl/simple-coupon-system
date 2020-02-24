@@ -1,0 +1,7 @@
+# Project exclude paths
+/simple-coupon-system-eureka/target/
+/simple-coupon-system-gateway/target/
+/simple-coupon-system-service/simple-coupon-system-common/target/
+/simple-coupon-system-service/simple-coupon-system-settlement/target/
+/simple-coupon-system-service/simple-coupon-system-template/target/
+/simple-coupon-system-service/simple-simple-coupon-system-disturibution/target/
